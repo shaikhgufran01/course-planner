@@ -1,5 +1,29 @@
-node_modules
-venv
-__pycache__
-planner.db
-dist
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+instance/
+*.sqlite3
+*.db
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+.vite/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
