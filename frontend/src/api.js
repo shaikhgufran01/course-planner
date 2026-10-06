@@ -25,7 +25,7 @@ export const api = {
   student: () => request("/student"),
   updateName: (name) => request("/student", { method: "PUT", body: JSON.stringify({ name }) }),
   courses: () => request("/courses"),
-  recommendations: () => request("/recommendations"),
+
   progress: () => request("/progress"),
   plans: () => request("/plans"),
   createPlan: (name, terms, term_labels) => request("/plans", { method: "POST", body: JSON.stringify({ name, terms, term_labels }) }),

@@ -41,7 +41,7 @@ class Student(db.Model):
     program = db.Column(db.String, default="BS in Data Science and Applications")
     status = db.Column(db.String, default="Active")
     start_index = db.Column(db.Integer, nullable=False)
-    total_credits = db.Column(db.Integer, default=190)
+    total_credits = db.Column(db.Integer, default=142)
     completed_credits = db.Column(db.Integer, default=70)
     current_level = db.Column(db.String, default="degree")
     completed = db.relationship("Course", secondary=completed_courses)

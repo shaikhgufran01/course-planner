@@ -24,15 +24,12 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import { RouterLink, RouterView, useRoute } from "vue-router";
-import { Bug, CalendarCheck, Compass, Layers, LayoutGrid, LineChart, TrendingUp } from "lucide-vue-next";
+import { Bug, CalendarCheck, Layers, LayoutGrid, TrendingUp } from "lucide-vue-next";
 import { api } from "./api";
 
 const NAV = [
   { title: "MAIN", links: [{ to: "/", label: "Dashboard", icon: LayoutGrid }] },
-  { title: "FOUNDATION", links: [
-    { to: "/recommendations", label: "Recommendations", icon: Compass },
-    { to: "/insights", label: "Course Insights", icon: LineChart },
-  ] },
+
   { title: "PLANNER", links: [
     { to: "/planner", label: "Course Planner", icon: CalendarCheck },
     { to: "/plans", label: "Saved Plans", icon: Layers },

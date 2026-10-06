@@ -4,7 +4,7 @@ import App from "./App.vue";
 import Dashboard from "./pages/Dashboard.vue";
 import Planner from "./pages/Planner.vue";
 import SavedPlans from "./pages/SavedPlans.vue";
-import Recommendations from "./pages/Recommendations.vue";
+
 import CreditTracker from "./pages/CreditTracker.vue";
 import "./styles.css";
 
@@ -15,8 +15,7 @@ const router = createRouter({
     { path: "/planner", component: Planner },
     { path: "/planner/:id", component: Planner, props: true },
     { path: "/plans", component: SavedPlans },
-    { path: "/recommendations", component: Recommendations },
-    { path: "/insights", component: Recommendations },
+
     { path: "/tracker", component: CreditTracker },
   ],
 });
