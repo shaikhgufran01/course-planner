@@ -25,6 +25,9 @@ def get_student() -> Student:
         s = Student(client_id=cid, start_index=termcal.term_index(date.today()))
         db.session.add(s)
         db.session.commit()
+    elif s.total_credits != 142:
+        s.total_credits = 142
+        db.session.commit()
     return s
 
 
